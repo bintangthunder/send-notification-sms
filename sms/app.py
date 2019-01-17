@@ -25,8 +25,8 @@ app.config['SECRET_KEY'] = "asasdasfasdf235424efg43terg"
 
 @app.route('/')
 def index():
-    #return render_template('index.html')
-    return render_template('test.html')
+    return render_template('index.html')
+    #return render_template('test.html')
 
 @app.route('/send_sms', methods=['POST'])
 def send_sms():
